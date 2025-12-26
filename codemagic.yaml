@@ -1,20 +1,19 @@
 workflows:
-  HTT-Safety-Web-App-iOS:
-    name: HTT Safety iOS
+  htt-safety-ios:
+    name: HTT Safety iOS Build
     instance_type: mac_mini_m2
     max_build_duration: 120
-    working_directory: .  # Change to 'ios/' if Xcode project is in subfolder
+    working_directory: .  # Your Xcode project is at repo root
     
     environment:
       groups:
-        - ios_creds  # Create this group in Codemagic UI
+        - ios_creds  # Create this in Codemagic UI
       vars:
-        XCODE_WORKSPACE: "WebViewGold.xcworkspace"  # ← CHANGE THIS
-        XCODE_SCHEME: "WebViewGold"                 # ← CHANGE THIS  
-        BUNDLE_ID: "com.growthclimb.httsafety"    # From your Play Store
-        APP_STORE_APP_ID: 6757065561           # ← ADD if publishing to App Store
+        XCODE_PROJECT: "HTT-Safety-Web-App-iOS.xcodeproj"  # From your repo structure
+        XCODE_SCHEME: "HTT-Safety-Web-App-iOS"             # Standard scheme name
+        BUNDLE_ID: "com.growthclimb.httsafety"             # From your Android app
       xcode: 16.0
-      cocoapods: default  # Remove if not using CocoaPods
+      # cocoapods: default  # Uncomment if you have Podfile
     
     triggering:
       events:
@@ -26,35 +25,26 @@ workflows:
           include: true
     
     scripts:
-      - name: Install CocoaPods (if using)
-        script: |
-          if [ -f Podfile ]; then
-            pod install
-          fi
+      # - name: Install CocoaPods
+      #   script: pod install  # Uncomment if using CocoaPods
       
       - name: Set up keychain
         script: keychain initialize
       
-      - name: Fetch signing files (automatic)
+      - name: Fetch automatic signing files
         script: |
-          app-store-connect fetch-signing-files $BUNDLE_ID $APP_STORE_APP_ID --type IOS_APP_STORE --create
+          app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
       
-      - name: Add certificates to keychain
+      - name: Add certificates
         script: keychain add-certificates
       
       - name: Configure code signing
         script: xcode-project use-profiles
       
-      - name: Increment build number (if App Store publishing)
-        script: |
-          if [ ! -z "$APP_STORE_APP_ID" ]; then
-            agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APP_ID") + 1))
-          fi
-      
       - name: Build IPA
         script: |
           xcode-project build-ipa \
-            --workspace "$XCODE_WORKSPACE" \
+            --project "$XCODE_PROJECT" \
             --scheme "$XCODE_SCHEME"
     
     artifacts:
@@ -65,7 +55,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - sweettwinkle698@gmail.com # ← CHANGE THIS
+          - info@adityasinghtomar.net  # Your GitHub email
         notify:
           success: true
           failure: true
