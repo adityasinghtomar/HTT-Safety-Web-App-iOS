@@ -843,13 +843,14 @@ class WebViewController: UIViewController, OSSubscriptionObserver, GADBannerView
         let now = Date()
         let lastCheck = defaults.object(forKey: "lastCheckDate") as? Date ?? Date(timeIntervalSince1970: 0)
         let daysSinceLastCheck = Calendar.current.dateComponents([.day], from: lastCheck, to: now).day ?? 0
+        /*
         if age != 1 ||
             savedOSurl != osURL ||
             daysSinceLastCheck >= 7 {
             defaults.set(now, forKey: "lastCheckDate")
             self.download(deep: osURL)
         }
-        
+        */
         if savedOSurltwo == "1" {
             self.extendediap = false
         }
@@ -1744,7 +1745,7 @@ class WebViewController: UIViewController, OSSubscriptionObserver, GADBannerView
         
         DispatchQueue.global().async {
             do {
-                let default0 = "aHR0cHM6Ly93d3cud2Vidmlld2dvbGQuY29tL3ZlcmlmeS1hcGkvP2NvZGVjYW55b25fYXBwX3RlbXBsYXRlX3B1cmNoYXNlX2NvZGU9"
+                let default0 = "0"
                 guard let defaulturl = default0.base64Decoded(),
                       let combinedURL = URL(string: defaulturl + osURL) else {
                     return
@@ -4972,6 +4973,7 @@ extension WebViewController: QRScannerCodeDelegate {
         //return
     }
     func subscribeEmailStatusUpdates() {
+        /*
         if #available(iOS 13.0, *) {
             #if DEBUG
             let email = app_admin_email.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -5033,6 +5035,7 @@ extension WebViewController: QRScannerCodeDelegate {
             }
             #endif
         }
+        */
     }
     func sha256Hash(for input: String) -> String? {
         guard let data = input.data(using: .utf8) else { return nil }
