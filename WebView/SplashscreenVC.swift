@@ -1,5 +1,5 @@
 //  OnlineAppCreator.com
-//  WebViewGold for iOS // webviewgold.com
+//  HTTSafety for iOS // webviewgold.com
 
 /* PLEASE CHECK CONFIG.SWIFT FOR CONFIGURATION */
 /* PLEASE CHECK CONFIG.SWIFT FOR CONFIGURATION */
@@ -126,7 +126,7 @@ class SplashscreenVC: UIViewController {
 
     func onAuthFail(error: Error?) {
         
-        let appName = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? "WebViewGold"
+        let appName = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? "HTTSafety"
         
         guard let topViewController = UIApplication.topViewController() else { return }
         let alert = UIAlertController(title: appName, message: error?.localizedDescription ?? "\(appName) requires biometric authorization.", preferredStyle: .alert)

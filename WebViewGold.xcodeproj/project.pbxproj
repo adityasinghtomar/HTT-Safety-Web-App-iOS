@@ -62,7 +62,7 @@
 		539BC95A292CEDCB005DB38D /* AppIconAlternate3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539BC957292CEDCA005DB38D /* AppIconAlternate3@3x.png */; };
 		539BC95B292CEDCB005DB38D /* AppIconAlternate3.png in Resources */ = {isa = PBXBuildFile; fileRef = 539BC958292CEDCA005DB38D /* AppIconAlternate3.png */; };
 		539BC95C292CEDCB005DB38D /* AppIconAlternate3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 539BC959292CEDCB005DB38D /* AppIconAlternate3@2x.png */; };
-		5667A47101B4609B1036B568 /* Pods_WebViewGold.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF3BE603AB78B24289929B1 /* Pods_WebViewGold.framework */; };
+		5667A47101B4609B1036B568 /* Pods_HTTSafety.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF3BE603AB78B24289929B1 /* Pods_HTTSafety.framework */; };
 		5A3B584DCF865D95D7828271 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B619AE8194CE647B02956741 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		6518C570227D555B0018F5CE /* IPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518C56F227D555B0018F5CE /* IPAViewController.swift */; };
 		65514F12227C623900894398 /* IPAHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65514F11227C623900894398 /* IPAHelper.swift */; };
@@ -121,7 +121,7 @@
 		1813F803259A59200063DAC3 /* OneSignalNotificationServiceExtension copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OneSignalNotificationServiceExtension copy-Info.plist"; sourceTree = "<group>"; };
 		18806FAD259748030001101F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1882E7912CF4EDCE00228571 /* GoogleMobileAdsConsentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsConsentManager.swift; sourceTree = "<group>"; };
-		1EF3BE603AB78B24289929B1 /* Pods_WebViewGold.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewGold.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF3BE603AB78B24289929B1 /* Pods_HTTSafety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTTSafety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F25A7672049C8CE008132D3 /* WebView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebView-Bridging-Header.h"; sourceTree = "<group>"; };
 		1F25A7682049C8D2008132D3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		1F25A7692049C8D2008132D3 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -149,20 +149,20 @@
 		3FC779CD2D6BF1B2006198F1 /* VideoPermissionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPermissionService.swift; sourceTree = "<group>"; };
 		3FD195A32B7CAD9100BA5952 /* custom.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
 		3FD195A52B7CAD9F00BA5952 /* custom.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = custom.js; sourceTree = "<group>"; };
-		4529498F20B89E7600EC341C /* WebViewGold.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebViewGold.entitlements; sourceTree = "<group>"; };
+		4529498F20B89E7600EC341C /* HTTSafety.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HTTSafety.entitlements; sourceTree = "<group>"; };
 		4574400420B890A000E6336E /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4574400620B890A000E6336E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		493107952612A0EE008DB3D4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4931B4AA25FB859200E2F1A4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4C8E8BAB23D7188000CFF8DB /* OneSignalNotificationServiceExtension copy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OneSignalNotificationServiceExtension copy.entitlements"; sourceTree = "<group>"; };
 		4C8E8BAE23D71E4F00CFF8DB /* FirebasePushNotificationDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebasePushNotificationDebug.entitlements; sourceTree = "<group>"; };
-		4C8E8BAF23D71E8400CFF8DB /* WebViewGoldDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebViewGoldDebug.entitlements; sourceTree = "<group>"; };
+		4C8E8BAF23D71E8400CFF8DB /* HTTSafetyDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HTTSafetyDebug.entitlements; sourceTree = "<group>"; };
 		4DC84FC84CD36F54D560947E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		521CB4FC2D9413E90055B53A /* FlashLightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashLightManager.swift; sourceTree = "<group>"; };
 		52563C1A226F5C6B00393434 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSignal.framework; sourceTree = "<group>"; };
 		526A984C2833C808007E3B60 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		527BA363237441D70033ECC8 /* LicenseCheck.app */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LicenseCheck.app; sourceTree = "<group>"; };
-		527BA364237441D70033ECC8 /* WebViewGold.app */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewGold.app; sourceTree = "<group>"; };
+		527BA364237441D70033ECC8 /* HTTSafety.app */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HTTSafety.app; sourceTree = "<group>"; };
 		5381170B29543C6800492A4D /* AppIconAlternate1-ipad@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIconAlternate1-ipad@3x.png"; sourceTree = "<group>"; };
 		5381170D29543DCD00492A4D /* AppIconAlternate2-ipad@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIconAlternate2-ipad@3x.png"; sourceTree = "<group>"; };
 		5381170E29543DCE00492A4D /* AppIconAlternate3-ipad@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIconAlternate3-ipad@3x.png"; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 		7F920E0C205C1DDC0036A7ED /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		7F920E0F205C247A0036A7ED /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		7F920E11205C27600036A7ED /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		8171D2081F6B096F00AA7B99 /* WebViewGold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewGold.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8171D2081F6B096F00AA7B99 /* HTTSafety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTSafety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8171D20B1F6B096F00AA7B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8171D20D1F6B096F00AA7B99 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8171D2101F6B096F00AA7B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -191,10 +191,10 @@
 		8171D2151F6B096F00AA7B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8171D2171F6B096F00AA7B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = WebView/Info.plist; sourceTree = SOURCE_ROOT; };
 		B619AE8194CE647B02956741 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D216D34ACB6C227F888EA641 /* Pods-WebViewGold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewGold.release.xcconfig"; path = "Target Support Files/Pods-WebViewGold/Pods-WebViewGold.release.xcconfig"; sourceTree = "<group>"; };
+		D216D34ACB6C227F888EA641 /* Pods-HTTSafety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTSafety.release.xcconfig"; path = "Target Support Files/Pods-HTTSafety/Pods-HTTSafety.release.xcconfig"; sourceTree = "<group>"; };
 		E715B8EC297116E600A91C7B /* example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = example.html; sourceTree = "<group>"; };
 		E715B8EE297116F500A91C7B /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
-		F39CC0CB4782B814FA1970AA /* Pods-WebViewGold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewGold.debug.xcconfig"; path = "Target Support Files/Pods-WebViewGold/Pods-WebViewGold.debug.xcconfig"; sourceTree = "<group>"; };
+		F39CC0CB4782B814FA1970AA /* Pods-HTTSafety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTSafety.debug.xcconfig"; path = "Target Support Files/Pods-HTTSafety/Pods-HTTSafety.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +214,7 @@
 				52563C1B226F5C6B00393434 /* OneSignal.framework in Frameworks */,
 				18806FAE259748030001101F /* StoreKit.framework in Frameworks */,
 				9B88244A2826B5DC00299A99 /* Zip in Frameworks */,
-				5667A47101B4609B1036B568 /* Pods_WebViewGold.framework in Frameworks */,
+				5667A47101B4609B1036B568 /* Pods_HTTSafety.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +273,8 @@
 			children = (
 				4DC84FC84CD36F54D560947E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
 				2860AE621441C013E1778331 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
-				F39CC0CB4782B814FA1970AA /* Pods-WebViewGold.debug.xcconfig */,
-				D216D34ACB6C227F888EA641 /* Pods-WebViewGold.release.xcconfig */,
+				F39CC0CB4782B814FA1970AA /* Pods-HTTSafety.debug.xcconfig */,
+				D216D34ACB6C227F888EA641 /* Pods-HTTSafety.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -284,7 +284,7 @@
 			children = (
 				18806FAD259748030001101F /* StoreKit.framework */,
 				B619AE8194CE647B02956741 /* Pods_OneSignalNotificationServiceExtension.framework */,
-				1EF3BE603AB78B24289929B1 /* Pods_WebViewGold.framework */,
+				1EF3BE603AB78B24289929B1 /* Pods_HTTSafety.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -331,16 +331,16 @@
 		8171D1FF1F6B096F00AA7B99 = {
 			isa = PBXGroup;
 			children = (
-				4C8E8BAF23D71E8400CFF8DB /* WebViewGoldDebug.entitlements */,
+				4C8E8BAF23D71E8400CFF8DB /* HTTSafetyDebug.entitlements */,
 				4C8E8BAE23D71E4F00CFF8DB /* FirebasePushNotificationDebug.entitlements */,
 				4C8E8BAB23D7188000CFF8DB /* OneSignalNotificationServiceExtension copy.entitlements */,
 				6518C56F227D555B0018F5CE /* IPAViewController.swift */,
 				65514F11227C623900894398 /* IPAHelper.swift */,
 				04FCA896242E201F00867141 /* splash.gif */,
-				527BA364237441D70033ECC8 /* WebViewGold.app */,
+				527BA364237441D70033ECC8 /* HTTSafety.app */,
 				527BA363237441D70033ECC8 /* LicenseCheck.app */,
 				52563C1A226F5C6B00393434 /* OneSignal.framework */,
-				4529498F20B89E7600EC341C /* WebViewGold.entitlements */,
+				4529498F20B89E7600EC341C /* HTTSafety.entitlements */,
 				8171D20A1F6B096F00AA7B99 /* WebView */,
 				4574400520B890A000E6336E /* OneSignalNotificationServiceExtension */,
 				8171D2091F6B096F00AA7B99 /* Products */,
@@ -354,7 +354,7 @@
 		8171D2091F6B096F00AA7B99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8171D2081F6B096F00AA7B99 /* WebViewGold.app */,
+				8171D2081F6B096F00AA7B99 /* HTTSafety.app */,
 				4574400420B890A000E6336E /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
@@ -420,9 +420,9 @@
 			productReference = 4574400420B890A000E6336E /* OneSignalNotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		8171D2071F6B096F00AA7B99 /* WebViewGold */ = {
+		8171D2071F6B096F00AA7B99 /* HTTSafety */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8171D21A1F6B096F00AA7B99 /* Build configuration list for PBXNativeTarget "WebViewGold" */;
+			buildConfigurationList = 8171D21A1F6B096F00AA7B99 /* Build configuration list for PBXNativeTarget "HTTSafety" */;
 			buildPhases = (
 				05A9D43A58A4C3288E128675 /* [CP] Check Pods Manifest.lock */,
 				8171D2041F6B096F00AA7B99 /* Sources */,
@@ -438,12 +438,12 @@
 			dependencies = (
 				4574400A20B890A000E6336E /* PBXTargetDependency */,
 			);
-			name = WebViewGold;
+			name = HTTSafety;
 			packageProductDependencies = (
 				9B8824492826B5DC00299A99 /* Zip */,
 			);
 			productName = WebView;
-			productReference = 8171D2081F6B096F00AA7B99 /* WebViewGold.app */;
+			productReference = 8171D2081F6B096F00AA7B99 /* HTTSafety.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -454,7 +454,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = WebViewGold.com;
+				ORGANIZATIONNAME = HTTSafety.com;
 				TargetAttributes = {
 					4574400320B890A000E6336E = {
 						CreatedOnToolsVersion = 9.3;
@@ -482,7 +482,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8171D2031F6B096F00AA7B99 /* Build configuration list for PBXProject "WebViewGold" */;
+			buildConfigurationList = 8171D2031F6B096F00AA7B99 /* Build configuration list for PBXProject "HTTSafety" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -498,7 +498,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8171D2071F6B096F00AA7B99 /* WebViewGold */,
+				8171D2071F6B096F00AA7B99 /* HTTSafety */,
 				4574400320B890A000E6336E /* OneSignalNotificationServiceExtension */,
 			);
 		};
@@ -555,7 +555,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WebViewGold/Pods-WebViewGold-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HTTSafety/Pods-HTTSafety-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
@@ -594,7 +594,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebViewGold/Pods-WebViewGold-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HTTSafety/Pods-HTTSafety-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		05A9D43A58A4C3288E128675 /* [CP] Check Pods Manifest.lock */ = {
@@ -612,7 +612,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WebViewGold-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HTTSafety-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -647,7 +647,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WebViewGold/Pods-WebViewGold-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HTTSafety/Pods-HTTSafety-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FBAudienceNetwork/FBAudienceNetwork.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Google-Mobile-Ads-SDK/GoogleMobileAdsResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUserMessagingPlatform/UserMessagingPlatformResources.bundle",
@@ -660,7 +660,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebViewGold/Pods-WebViewGold-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HTTSafety/Pods-HTTSafety-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -762,7 +762,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.onlineappcreator.webviewgold.OneSignalNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.growthclimb.httsafety.OneSignalNotificationServiceExtension;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = OneSignalNotificationServiceExtension;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -790,7 +790,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.onlineappcreator.webviewgold.OneSignalNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.growthclimb.httsafety.OneSignalNotificationServiceExtension;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = OneSignalNotificationServiceExtension;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -923,12 +923,12 @@
 		};
 		8171D21B1F6B096F00AA7B99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F39CC0CB4782B814FA1970AA /* Pods-WebViewGold.debug.xcconfig */;
+			baseConfigurationReference = F39CC0CB4782B814FA1970AA /* Pods-HTTSafety.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = WebViewGold.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HTTSafety.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
@@ -948,8 +948,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.onlineappcreator.webviewgold;
-				PRODUCT_NAME = WebViewGold;
+				PRODUCT_BUNDLE_IDENTIFIER = com.growthclimb.httsafety;
+				PRODUCT_NAME = HTTSafety;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WebView/SVProgressHUD/WebView-Bridging-Header.h";
@@ -962,12 +962,12 @@
 		};
 		8171D21C1F6B096F00AA7B99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D216D34ACB6C227F888EA641 /* Pods-WebViewGold.release.xcconfig */;
+			baseConfigurationReference = D216D34ACB6C227F888EA641 /* Pods-HTTSafety.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = WebViewGold.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HTTSafety.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
@@ -988,8 +988,8 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.onlineappcreator.webviewgold;
-				PRODUCT_NAME = WebViewGold;
+				PRODUCT_BUNDLE_IDENTIFIER = com.growthclimb.httsafety;
+				PRODUCT_NAME = HTTSafety;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WebView/SVProgressHUD/WebView-Bridging-Header.h";
@@ -1011,7 +1011,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8171D2031F6B096F00AA7B99 /* Build configuration list for PBXProject "WebViewGold" */ = {
+		8171D2031F6B096F00AA7B99 /* Build configuration list for PBXProject "HTTSafety" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8171D2181F6B096F00AA7B99 /* Debug */,
@@ -1020,7 +1020,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8171D21A1F6B096F00AA7B99 /* Build configuration list for PBXNativeTarget "WebViewGold" */ = {
+		8171D21A1F6B096F00AA7B99 /* Build configuration list for PBXNativeTarget "HTTSafety" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8171D21B1F6B096F00AA7B99 /* Debug */,

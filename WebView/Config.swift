@@ -4,7 +4,7 @@
 
 // *** Your Purchase Code of Envato/CodeCanyon ***
 
-// 1. Buy a WebViewGold license (https://www.webviewgold.com/download/iOS) for each app you publish. If your app is going to be
+// 1. Buy a HTTSafety license (https://www.webviewgold.com/download/iOS) for each app you publish. If your app is going to be
 // free, a "Regular License" is required. If your app will be sold to your users or if you use the In-App Purchases API, an
 // "Extended License" is required. More info: https://codecanyon.net/licenses/standard?ref=onlineappcreator
 
@@ -20,8 +20,8 @@ var app_admin_email = "app_admin@example.org"
 // *** Your Website ***
 
 // 4. Enter your website details here:
-var host = "example.org" //Set your domain host without http:// or https:// prefixes and without any subdomain like "www."
-var webviewurl = "https://www.example.org" //Set your full web app/website URL including http:// or https:// prefix and including subdomains if they are in your URL, like "www.", for example
+var host = "httsafety.com" //Set your domain host without http:// or https:// prefixes and without any subdomain like "www."
+var webviewurl = "https://httsafety.com/mobile-app/" //Set your full web app/website URL including http:// or https:// prefix and including subdomains if they are in your URL, like "www.", for example
 
 // 5. You are all done! Enjoy your app! :-)
 
@@ -31,11 +31,11 @@ var webviewurl = "https://www.example.org" //Set your full web app/website URL i
 
 var uselocalhtmlfolder = false //Set to "true" to use local "local-www/index.html" file instead of remote URL
 
-var openallexternalurlsinsafaribydefault = false //Set to "true" to open all external hosts in Safari by default
+var openallexternalurlsinsafaribydefault = true //Set to "true" to open all external hosts in Safari by default
 
 var safariwhitelist = ["alwaysopeninsafari.com",] //Add domains here that should ALWAYS be opened in Safari, regardless of what the openallexternalurlsinsafaribydefault option is set to; to add another domain, insert another host like so: ["alwaysopeninsafari.com", "google.com", "m.facebook.com"] please enter the host exactly how you link to it (with or without www, but always without http/https)
 
-var safariblacklist = [host, "neversopeninsafari.com",] //Add domains here that should NEVER be opened in Safari, regardless of what the openallexternalurlsinsafaribydefault option is set to; to add another domain, insert another host like so: ["alwaysopeninsafari.com", "google.com", "m.facebook.com"] please enter the host exactly how you link to it (with or without www, but always without http/https)
+var safariblacklist = [host, "stripe.com",] //Add domains here that should NEVER be opened in Safari, regardless of what the openallexternalurlsinsafaribydefault option is set to; to add another domain, insert another host like so: ["alwaysopeninsafari.com", "google.com", "m.facebook.com"] please enter the host exactly how you link to it (with or without www, but always without http/https)
 
 var openspecialurlsinnewtab = true //Set to "true" to open links with attributes (e.g., _blank) in a new in-app tab by default
 
@@ -44,11 +44,11 @@ var openspecialurlsinnewtablist = ["alwaysopenspecialurlinnewtab.com"] //Add spe
 let enableBioMetricAuth = false  //Set to true to enable Face ID/Touch ID/Code authentication required for the app (this is an independent/additional option to our JavaScript-based Bio Auth API, see documentation)
 
 //Set to "true" to automatically load JavaScript variables (e.g., UUID, app version, OneSignal and Firebase player IDs, and App Store location) without needing to call specific URLs like get-uuid:// (this currently supports app version, OneSignal and Firebase player IDs, UUID, and App Store location)
-let autoInjectVariable = false
+let autoInjectVariable = true
 
 var disablecallout = true //Set to "true" to remove WKWebView 3D touch/callout window for links (recommended for most cases)
 
-var deletecache = false //Set to "true" to clear the WebView cache & cookies on each app startup
+var deletecache = true //Set to "true" to clear the WebView cache & cookies on each app startup
 
 var deletecacheonexit = false //Set to "true" to clear WebView cache & cookies upon full app exit (you might also want to activate 'deletecache', as iOS version differences could affect reliability)
 
@@ -68,19 +68,19 @@ var orientationiphone = "auto" //Set the orientation to either "portrait", "land
 
 var orientationipad = "auto" //Set the orientation to either "portrait", "landscape", or "auto"
 
-var preventsleep = false //Set to "true" to prevent the device from going into sleep while the app is active
+var preventsleep = true //Set to "true" to prevent the device from going into sleep while the app is active
 
 var preventZoom = false //Set to true to disable user zoom by injecting code that prevents zooming on the website
 
-var preventoverscroll = true //Set to "true" to remove WKWebView bounce animation (recommended for most cases). Set to "false" if using pull to refresh in your app.
+var preventoverscroll = false //Set to "true" to remove WKWebView bounce animation (recommended for most cases). Set to "false" if using pull to refresh in your app.
 
-var enhanceUrlUUID = false //Set to "true" to add the UUID parameter 'uuid=XYZ' to the first URL request
+var enhanceUrlUUID = true //Set to "true" to add the UUID parameter 'uuid=XYZ' to the first URL request
 
 var linkDragAndDrop = true //Set to "false" to disable link drag and drop
 
 //Pull to Refresh
 
-var pulltorefresh = false //Set to "true" to enable pull to refresh. Note that to enable this feature, 'preventoverscroll' needs to be set to "false".
+var pulltorefresh = true //Set to "true" to enable pull to refresh. Note that to enable this feature, 'preventoverscroll' needs to be set to "false".
 
 var pulltorefresh_loadingsigncolour_lightmode = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1) //Set the colour of the pull to refresh loading sign in light mode
 
@@ -92,9 +92,9 @@ var pulltorefresh_backgroundcolour_darkmode = #colorLiteral(red: 1, green: 1, bl
 
 //Custom User Agent for WebView Requests
 
-var useragent_iphone = "" //Set a customized UserAgent on iPhone (or leave it empty to use the default iOS iPhone UserAgent)
+var useragent_iphone = "HTT-App-Live-iphone" //Set a customized UserAgent on iPhone (or leave it empty to use the default iOS iPhone UserAgent)
 
-var useragent_ipad = "" //Set a customized UserAgent on iPad (or leave it empty to use the default iOS iPad UserAgent)
+var useragent_ipad = "HTT-App-Live-ipad" //Set a customized UserAgent on iPad (or leave it empty to use the default iOS iPad UserAgent)
 
 // Social Media Login Helpers
 // Note: To be used if the login link fails to open in-app / doesn't work and other methods like 'openspecialurlsinnewtab = false', the safariblacklist and a Custom User Agent does not help
@@ -142,7 +142,7 @@ var becomefacebookfriendsyes = "Yes" //Set the text label of the "Yes" button of
 
 var becomefacebookfriendsno = "No" //Set the text label of the "No" button of the "Follow on Facebook" dialog (if you like, you have the ability to translate this string into two additional languages using the 'alternatelanguage1' and 'alternatelanguage2' strings found at the end of this Config.swift file)
 
-var becomefacebookfriendsurl = "https://www.facebook.com/OnlineAppCreator/" //Set the URL of your Facebook page
+var becomefacebookfriendsurl = "https://www.facebook.com/httsafety/" //Set the URL of your Facebook page
 
 
 //Image Downloader API
@@ -173,7 +173,7 @@ var darkmodeBottombarBackgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, 
 
 //QR Code Scanner Configuration
 
-var qrcodelinks = 0 //Set to (0) to open a scanned QR code URL in the app; (1) in an in-app tab; (2) in a new browser; (3) in an in-app tab if external; (4) in a new browser if external; moreover, you can optionally limit the allowed QR code scanner prefixes in the "allowedQRurls" array of the SwiftQRScanner.swift file
+var qrcodelinks = 2 //Set to (0) to open a scanned QR code URL in the app; (1) in an in-app tab; (2) in a new browser; (3) in an in-app tab if external; (4) in a new browser if external; moreover, you can optionally limit the allowed QR code scanner prefixes in the "allowedQRurls" array of the SwiftQRScanner.swift file
 
 //Universal Links API & Deep Linking API
 
@@ -183,9 +183,9 @@ var ShowExternalLink = false //Set to "true" to open links sent through Universa
 
 var splashScreenEnabled = true //Set to "false" if you want to disable the Splash Screen while the app launches and display the Loading Sign instead
 
-var remainSplashOption = false //Set to "true" if you want to display the Splash Screen until the initial loading of your homepage is complete (instead of the Loading Sign)
+var remainSplashOption = true //Set to "true" if you want to display the Splash Screen until the initial loading of your homepage is complete (instead of the Loading Sign)
 
-var splashTimeout = 5000 //Set the splash screen timeout time for the remainSplashOption option in milliseconds (if useLoadingSign is active, the loading sign will show as usual after this time duration if the home URL still has some loading to do)
+var splashTimeout = 2000 //Set the splash screen timeout time for the remainSplashOption option in milliseconds (if useLoadingSign is active, the loading sign will show as usual after this time duration if the home URL still has some loading to do)
 
 var scaleSplashImage = 25 //Set the splash screen image size with respect to the device's smallest width/height; range in percentage [0-100]; value = 0 will hide the image completely, value = 100 will display the image in full-screen mode
 
@@ -208,7 +208,7 @@ var zipfilepopupmessage = "The app content is being updated, please wait a momen
 
 public struct Constants {
     
-static let backgroundlocation = false // Set to true to allow background location access (additionally, ensure "Background Modes" capability in the Xcode project settings includes "Location updates". Additionally, depending on your web app, you may need to activate “Background Processing” (in this case, also add an array to your Info.plist file with the key “Permitted background task scheduler identifiers" – under this array, include a string with your app bundle ID, e.g., "com.onlineappcreator.webviewgold")
+static let backgroundlocation = false // Set to true to allow background location access (additionally, ensure "Background Modes" capability in the Xcode project settings includes "Location updates". Additionally, depending on your web app, you may need to activate “Background Processing” (in this case, also add an array to your Info.plist file with the key “Permitted background task scheduler identifiers" – under this array, include a string with your app bundle ID, e.g., "com.growthclimb.httsafety")
     
 static let appendlanguage = false //Set to true if you want to extend URL request by the system language like ?webview_language=LANGUAGE CODE (e.g., ?webview_language=EN for English users)
     
@@ -218,7 +218,7 @@ static let jailbreakBlock = false // Change to true to block the app on jailbrok
     
 static let autoRefreshEnabled = false //Set this to true if you want the WebView to automatically refresh its contents when the app comes back to the foreground from the background.
         
-static let splashscreencolor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //Set a background color for the splash screen
+static let splashscreencolor =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0) //Set a background color for the splash screen
    
 static let extentionARY:NSArray = ["pdf","mp3","mp4","wav","epub","pkpass","pptx","ppt","doc","docx","xlsx","ics"] //Add the file formats that should trigger the file downloader functionality (e.g., .pdf, .docx, ...)
     
@@ -244,9 +244,9 @@ static let InAppPurchAppBundleIdentifier = "xxxx.xxxx.xxxx" //Default In-App Pur
 
 static var IAPSharedSecret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" //Default In-App Purchase Shared Secret
 
-static let iapsuccessurl = "https://www.google.com/" //Default In-App Purchase/In-App Subscription Success URL
+static let iapsuccessurl = "https://www.httsafety.com/" //Default In-App Purchase/In-App Subscription Success URL
 
-static let iapexpiredurl = "https://www.yahoo.com/" //Default In-App Subscription Expired URL
+static let iapexpiredurl = "https://www.httsafety.com/" //Default In-App Subscription Expired URL
 
 //OneSignal Push Configuration
     
@@ -258,13 +258,13 @@ static let kPushEnhanceUrl      = false; //Set to true if you want to extend Web
 
 static let kPushReloadOnUserId  = false; //Set to true if WebView should be reloaded after receiving the UserID from OneSignal
 
-static let kPushOpenDeeplinkInBrowser  = false; //Set to true to open deeplinking URLs from OneSignal in the Safari browser instead of the main WebView; Important: For sending notifications with a link from OneSignal, do NOT use 'Launch URL' instead, you must use an 'Additional Data Field', with key: url and value: the link you want to use. See WebViewGold documentation for more information.
+static let kPushOpenDeeplinkInBrowser  = false; //Set to true to open deeplinking URLs from OneSignal in the Safari browser instead of the main WebView; Important: For sending notifications with a link from OneSignal, do NOT use 'Launch URL' instead, you must use an 'Additional Data Field', with key: url and value: the link you want to use. See HTTSafety documentation for more information.
     
 //Firebase Push Configuration
     
-static let kFirebasePushEnabled   = false; //Set to true to activate the Firebase push functionality (before activating, please download and replace Google-ServiceInfo.plist from Firebase Dashboard)
+static let kFirebasePushEnabled   = true; //Set to true to activate the Firebase push functionality (before activating, please download and replace Google-ServiceInfo.plist from Firebase Dashboard)
 
-static let kFirebaseEnhanceUrl   = false; //Set to true if you want to extend WebView Main URL requests by ?firebase_push_id=XYZ
+static let kFirebaseEnhanceUrl   = true; //Set to true if you want to extend WebView Main URL requests by ?firebase_push_id=XYZ
     
 static let firebaseTopic = "" //Optional: set a Firebase Topic to subscribe to
     

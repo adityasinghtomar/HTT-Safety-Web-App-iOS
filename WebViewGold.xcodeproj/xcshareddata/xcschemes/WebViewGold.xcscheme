@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8171D2071F6B096F00AA7B99"
-               BuildableName = "WebViewGold.app"
-               BlueprintName = "WebViewGold"
-               ReferencedContainer = "container:WebViewGold.xcodeproj">
+               BuildableName = "HTTSafety.app"
+               BlueprintName = "HTTSafety"
+               ReferencedContainer = "container:HTTSafety.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8171D2071F6B096F00AA7B99"
-            BuildableName = "WebViewGold.app"
-            BlueprintName = "WebViewGold"
-            ReferencedContainer = "container:WebViewGold.xcodeproj">
+            BuildableName = "HTTSafety.app"
+            BlueprintName = "HTTSafety"
+            ReferencedContainer = "container:HTTSafety.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -54,9 +54,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8171D2071F6B096F00AA7B99"
-            BuildableName = "WebViewGold.app"
-            BlueprintName = "WebViewGold"
-            ReferencedContainer = "container:WebViewGold.xcodeproj">
+            BuildableName = "HTTSafety.app"
+            BlueprintName = "HTTSafety"
+            ReferencedContainer = "container:HTTSafety.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8171D2071F6B096F00AA7B99"
-            BuildableName = "WebViewGold.app"
-            BlueprintName = "WebViewGold"
-            ReferencedContainer = "container:WebViewGold.xcodeproj">
+            BuildableName = "HTTSafety.app"
+            BlueprintName = "HTTSafety"
+            ReferencedContainer = "container:HTTSafety.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

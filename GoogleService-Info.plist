@@ -3,34 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>xxxxxxxxxxx</string>
+	<string>958723095135-4oq00qde7al72mq0snh9u1o2po7e06p3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>xxxxxxxxxxx</string>
+	<string>com.googleusercontent.apps.958723095135-4oq00qde7al72mq0snh9u1o2po7e06p3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>958723095135-jfg5p0bnkj5f0d24cd5nkmp0su1kc3i8.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>xxxxxxxxxxx</string>
+	<string>AIzaSyCu79Gfadfq7VEaJcPnpyWXg7vKoHeuI34</string>
 	<key>GCM_SENDER_ID</key>
-	<string>xxxxxxxxxxx</string>
+	<string>958723095135</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>xxxxxxxxxxx</string>
+	<string>com.growthclimb.httsafety</string>
 	<key>PROJECT_ID</key>
-	<string>xxxxxxxxxxx</string>
+	<string>htt-safety</string>
 	<key>STORAGE_BUCKET</key>
-	<string>xxxxxxxxxxx</string>
+	<string>htt-safety.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>xxxxxxxxxxx</string>
-	<key>DATABASE_URL</key>
-	<string>xxxxxxxxxxx</string>
+	<string>1:958723095135:ios:431c05b6abe68d960b39ea</string>
 </dict>
 </plist>

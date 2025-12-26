@@ -1,9 +1,9 @@
 //
 //  FlashLightManager.swift
-//  WebViewGold
+//  HTTSafety
 //
 //  Created by Laurence Trippen on 23.03.25.
-//  Copyright © 2025 WebViewGold.com. All rights reserved.
+//  Copyright © 2025 HTTSafety.com. All rights reserved.
 //
 
 import AVFoundation

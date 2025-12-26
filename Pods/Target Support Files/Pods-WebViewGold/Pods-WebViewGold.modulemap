@@ -1,5 +1,5 @@
-framework module Pods_WebViewGold {
-  umbrella header "Pods-WebViewGold-umbrella.h"
+framework module Pods_HTTSafety {
+  umbrella header "Pods-HTTSafety-umbrella.h"
 
   export *
   module * { export * }

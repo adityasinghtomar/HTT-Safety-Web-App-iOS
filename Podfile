@@ -11,11 +11,11 @@ end
 
 
 
-target 'WebViewGold' do
+target 'HTTSafety' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for WebViewGold
+  # Pods for HTTSafety
   pod 'OneSignalXCFramework', '3.12.9'
   pod 'Google-Mobile-Ads-SDK'
   pod 'Firebase/Core'

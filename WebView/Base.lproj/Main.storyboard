@@ -12,7 +12,7 @@
         <!--Web View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="WebViewController" id="BYZ-38-t0r" customClass="WebViewController" customModule="WebViewGold" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="BYZ-38-t0r" customClass="WebViewController" customModule="HTTSafety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
         <!--Helper-->
         <scene sceneID="3ge-TN-5eY">
             <objects>
-                <viewController id="YPV-uX-R3Q" customClass="IPAHelper" customModule="WebViewGold" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YPV-uX-R3Q" customClass="IPAHelper" customModule="HTTSafety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dZa-RD-wtD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +160,7 @@
         <!--View Controller-->
         <scene sceneID="snC-Pb-OQu">
             <objects>
-                <viewController id="url-i9-twI" customClass="IPAViewController" customModule="WebViewGold" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="url-i9-twI" customClass="IPAViewController" customModule="HTTSafety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fj6-va-fID">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,7 +188,7 @@
         <!--QrcodeVC-->
         <scene sceneID="nhD-P7-3SP">
             <objects>
-                <viewController storyboardIdentifier="QrcodeVC" id="Hgu-Ay-kks" customClass="QrcodeVC" customModule="WebViewGold" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QrcodeVC" id="Hgu-Ay-kks" customClass="QrcodeVC" customModule="HTTSafety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q0x-Hj-MLf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +249,7 @@
         <!--LoadindexpageVC-->
         <scene sceneID="p9H-gM-8LF">
             <objects>
-                <viewController storyboardIdentifier="LoadindexpageVC" id="AoM-6M-ZrI" customClass="LoadindexpageVC" customModule="WebViewGold" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadindexpageVC" id="AoM-6M-ZrI" customClass="LoadindexpageVC" customModule="HTTSafety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZJd-e0-1Jl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,7 +286,7 @@
         <!--SplashscreenVC-->
         <scene sceneID="aWW-H4-HmJ">
             <objects>
-                <viewController id="sGX-df-6Mh" customClass="SplashscreenVC" customModule="WebViewGold" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sGX-df-6Mh" customClass="SplashscreenVC" customModule="HTTSafety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CoZ-yB-gSJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
