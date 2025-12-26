@@ -9,8 +9,8 @@ workflows:
       groups:
         - ios_creds  # Create this in Codemagic UI
       vars:
-        XCODE_PROJECT: "HTT-Safety-Web-App-iOS.xcodeproj"  # From your repo structure
-        XCODE_SCHEME: "HTT-Safety-Web-App-iOS"             # Standard scheme name
+        XCODE_PROJECT: "WebViewGold.xcodeproj"  # From your repo structure
+        XCODE_SCHEME: "WebViewGold"             # Standard scheme name
         BUNDLE_ID: "com.growthclimb.httsafety"             # From your Android app
       xcode: 16.0
       # cocoapods: default  # Uncomment if you have Podfile
