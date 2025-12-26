@@ -28,24 +28,25 @@ workflows:
       # - name: Install CocoaPods
       #   script: pod install  # Uncomment if using CocoaPods
       
-      - name: Set up keychain
-        script: keychain initialize
+      # - name: Set up keychain
+      #  script: keychain initialize
       
-      - name: Fetch automatic signing files
-        script: |
-          app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
+      # - name: Fetch automatic signing files
+      #  script: |
+      #    app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
       
-      - name: Add certificates
-        script: keychain add-certificates
+      #- name: Add certificates
+      #  script: keychain add-certificates
       
-      - name: Configure code signing
-        script: xcode-project use-profiles
+      # - name: Configure code signing
+      #  script: xcode-project use-profiles
       
-      - name: Build IPA
+      - name: Build unsigned IPA (no App Store Connect)
         script: |
           xcode-project build-ipa \
             --project "$XCODE_PROJECT" \
             --scheme "$XCODE_SCHEME"
+            --no-codesign
     
     artifacts:
       - build/ios/ipa/*.ipa
