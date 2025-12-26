@@ -25,17 +25,35 @@ workflows:
           include: true
     
     scripts:
-      - name: Build unsigned IPA (no App Store Connect)
+      - name: Archive app
         script: |
           #!/usr/bin/env bash
           set -e
 
-          xcode-project build-ipa \
-            --project "$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME" \
-            --archive-flags "-destination generic/platform=iOS"
+          ARCHIVE_PATH="$PWD/build/HTTSafety.xcarchive"
 
-                
+          xcodebuild \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath "$ARCHIVE_PATH" \
+            clean archive
+
+      - name: Export IPA
+        script: |
+          #!/usr/bin/env bash
+          set -e
+
+          ARCHIVE_PATH="$PWD/build/HTTSafety.xcarchive"
+          EXPORT_PATH="$PWD/build/ipa"
+
+          xcodebuild \
+            -exportArchive \
+            -archivePath "$ARCHIVE_PATH" \
+            -exportPath "$EXPORT_PATH" \
+            -exportOptionsPlist "$PWD/exportOptions.plist"
+        
       # - name: Install CocoaPods
       #   script: pod install  # Uncomment if using CocoaPods
       
@@ -54,8 +72,8 @@ workflows:
     
     
     artifacts:
-      - build/ios/ipa/*.ipa
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+      - build/ipa/*.ipa
+      - build/HTTSafety.xcarchive
       - $HOME/Library/Developer/Xcode/DerivedData/**/Logs/**/*
     
     publishing:
