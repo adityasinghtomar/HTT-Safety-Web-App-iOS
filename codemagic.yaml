@@ -25,12 +25,19 @@ workflows:
           include: true
     
     scripts:
-      - name: Build unsigned IPA (no App Store Connect)
+      - name: Build IPA with Codemagic CLI (no App Store Connect)
         script: |
-          xcode-project build-ipa \
+          #!/usr/bin/env bash
+          set -e
+
+          # Ensure Codemagic CLI tools are available
+          pip3 install --user codemagic-cli-tools
+
+          cm xcode-project build-ipa \
             --project "$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME"    \
+            --scheme "$XCODE_SCHEME" \
             --archive-flags "-destination generic/platform=iOS"
+
                 
       # - name: Install CocoaPods
       #   script: pod install  # Uncomment if using CocoaPods
