@@ -25,6 +25,14 @@ workflows:
           include: true
     
     scripts:
+      - name: Build unsigned IPA (no App Store Connect)
+        script: |
+          xcode-project build-ipa \
+            --project "$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"    \
+            --archive-flags "-destination generic/platform=iOS" \
+            --no-codesign
+                
       # - name: Install CocoaPods
       #   script: pod install  # Uncomment if using CocoaPods
       
@@ -40,14 +48,7 @@ workflows:
       
       # - name: Configure code signing
       #  script: xcode-project use-profiles
-      
-      - name: Build unsigned IPA (no App Store Connect)
-        script: |
-          xcode-project build-ipa \
-            --project "$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME"    \
-            --archive-flags "-destination generic/platform=iOS" \
-            --no-codesign
+    
     
     artifacts:
       - build/ios/ipa/*.ipa
