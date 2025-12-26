@@ -3,28 +3,32 @@ workflows:
     name: HTT Safety iOS Build
     instance_type: mac_mini_m2
     max_build_duration: 120
-    working_directory: .  # Your Xcode project is at repo root
-    
+    working_directory: .   # WebViewGold.xcodeproj is at repo root
+
     environment:
-      groups:
-        - ios_creds  # Create this in Codemagic UI
       vars:
-        XCODE_PROJECT: "WebViewGold.xcodeproj"  # From your repo structure
-        XCODE_SCHEME: "HTTSafety"             # Standard scheme name
-        BUNDLE_ID: "com.growthclimb.httsafety"             # From your Android app
+        XCODE_WORKSPACE: "WebViewGold.xcworkspace"
+        XCODE_SCHEME: "HTTSafety"
       xcode: 16.0
-      # cocoapods: default  # Uncomment if you have Podfile
-    
+      cocoapods: default
+
     triggering:
       events:
         - push
         - tag
-        - pull_request
       branch_patterns:
         - pattern: "*"
           include: true
-    
+
     scripts:
+      - name: Install CocoaPods
+        script: |
+          #!/usr/bin/env bash
+          set -e
+          if [ -f "Podfile" ]; then
+            pod install
+          fi
+
       - name: Archive app
         script: |
           #!/usr/bin/env bash
@@ -33,12 +37,12 @@ workflows:
           ARCHIVE_PATH="$PWD/build/HTTSafety.xcarchive"
 
           xcodebuild \
-            -project "$XCODE_PROJECT" \
+            -workspace "$XCODE_WORKSPACE" \
             -scheme "$XCODE_SCHEME" \
             -configuration Release \
             -destination "generic/platform=iOS" \
             -archivePath "$ARCHIVE_PATH" \
-            clean archive
+            archive
 
       - name: Export IPA
         script: |
@@ -53,33 +57,16 @@ workflows:
             -archivePath "$ARCHIVE_PATH" \
             -exportPath "$EXPORT_PATH" \
             -exportOptionsPlist "$PWD/exportOptions.plist"
-        
-      # - name: Install CocoaPods
-      #   script: pod install  # Uncomment if using CocoaPods
-      
-      # - name: Set up keychain
-      #  script: keychain initialize
-      
-      # - name: Fetch automatic signing files
-      #  script: |
-      #    app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
-      
-      #- name: Add certificates
-      #  script: keychain add-certificates
-      
-      # - name: Configure code signing
-      #  script: xcode-project use-profiles
-    
-    
+
     artifacts:
       - build/ipa/*.ipa
       - build/HTTSafety.xcarchive
       - $HOME/Library/Developer/Xcode/DerivedData/**/Logs/**/*
-    
+
     publishing:
       email:
         recipients:
-          - info@adityasinghtomar.net  # Your GitHub email
+          - info@adityasinghtomar.net
         notify:
           success: true
           failure: true
