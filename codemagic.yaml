@@ -8,7 +8,7 @@ workflows:
     environment:
       vars:
         XCODE_WORKSPACE: "WebViewGold.xcworkspace"
-        XCODE_SCHEME: "HTTSafety"
+        XCODE_SCHEME: "WebViewGold"
       xcode: 16.0
       cocoapods: default
 
