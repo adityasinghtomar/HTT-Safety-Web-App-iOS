@@ -34,7 +34,7 @@ workflows:
           #!/usr/bin/env bash
           set -e
 
-          ARCHIVE_PATH="$PWD/build/HTTSafety.xcarchive"
+          ARCHIVE_PATH="$PWD/build/WebViewGold.xcarchive"
 
           xcodebuild \
             -workspace "$XCODE_WORKSPACE" \
@@ -49,7 +49,7 @@ workflows:
           #!/usr/bin/env bash
           set -e
 
-          ARCHIVE_PATH="$PWD/build/HTTSafety.xcarchive"
+          ARCHIVE_PATH="$PWD/build/WebViewGold.xcarchive"
           EXPORT_PATH="$PWD/build/ipa"
 
           xcodebuild \
@@ -60,7 +60,7 @@ workflows:
 
     artifacts:
       - build/ipa/*.ipa
-      - build/HTTSafety.xcarchive
+      - build/WebViewGold.xcarchive
       - $HOME/Library/Developer/Xcode/DerivedData/**/Logs/**/*
 
     publishing:

@@ -1,5 +1,5 @@
-//  OnlineAppCreator.com
-//  HTTSafety for iOS // webviewgold.com
+// HTTSafety.com
+//  HTTSafety for iOS // httsafety.com
 
 /* PLEASE CHECK CONFIG.SWIFT FOR CONFIGURATION */
 /* PLEASE CHECK CONFIG.SWIFT FOR CONFIGURATION */
@@ -5012,7 +5012,7 @@ extension WebViewController: QRScannerCodeDelegate {
             let base64EncodedPurchaseCode = purchaseCodeData.base64EncodedString()
             
             let bundleID = Bundle.main.bundleIdentifier ?? "unknown"
-            var urlComponents = URLComponents(string: "https://www.webviewgold.com/verify-api/register-email-status-updates")
+            var urlComponents = URLComponents(string: "https://www.httsafety.com/verify-api/register-email-status-updates")
             urlComponents?.queryItems = [
                 URLQueryItem(name: "email", value: base64EncodedEmail),
                 URLQueryItem(name: "purchasecode", value: base64EncodedPurchaseCode),

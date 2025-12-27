@@ -1010,7 +1010,7 @@
 		0D74A4A92C184A67BE81BC94D2E7F946 /* FIRInstallationsLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsLogger.m; path = FirebaseInstallations/Source/Library/FIRInstallationsLogger.m; sourceTree = "<group>"; };
 		0D7557C712D348EBA619F173C51631F9 /* GULMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULMutableDictionary.m; path = GoogleUtilities/Network/GULMutableDictionary.m; sourceTree = "<group>"; };
 		0DA8AE900011DF90AA01A5A46DE29A6D /* FIRLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLibrary.h; path = FirebaseCore/Extension/FIRLibrary.h; sourceTree = "<group>"; };
-		0ED499D5A43825FF1919D76680FAE2DD /* Pods-HTTSafety.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HTTSafety.modulemap"; sourceTree = "<group>"; };
+		0ED499D5A43825FF1919D76680FAE2DD /* Pods-WebViewGold.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WebViewGold.modulemap"; sourceTree = "<group>"; };
 		0F54B5B4CE54582DC415131B15BE1C11 /* SwiftyStoreKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-prefix.pch"; sourceTree = "<group>"; };
 		0F8D9C96C0C25AA0673D0CA7E49EF7CB /* GDTCORProductData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORProductData.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORProductData.m; sourceTree = "<group>"; };
 		0FA6B8BD8891956CB2DF9A95E77A23A8 /* GDTCOREndpoints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCOREndpoints.m; path = GoogleDataTransport/GDTCORLibrary/GDTCOREndpoints.m; sourceTree = "<group>"; };
@@ -1436,7 +1436,7 @@
 		ACE8EEC93D212003CD390A50E926C21B /* FBAdSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSize.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdSize.h"; sourceTree = "<group>"; };
 		AEAF8FA7A8BCFDFACB6ED766C4096586 /* FirebaseMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseMessaging.h; path = FirebaseMessaging/Sources/FirebaseMessaging.h; sourceTree = "<group>"; };
 		AEC1AF97126F2923C590FBBA1AF44FFB /* FIRMessagingTokenStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessagingTokenStore.h; path = FirebaseMessaging/Sources/Token/FIRMessagingTokenStore.h; sourceTree = "<group>"; };
-		AF00C0B3BA45AB553720C0154B7464DA /* Pods-HTTSafety */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HTTSafety"; path = Pods_HTTSafety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF00C0B3BA45AB553720C0154B7464DA /* Pods-HTTSafety */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HTTSafety"; path = Pods_WebViewGold.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAF634B9E707E8CB395E6648F5D70E0 /* FIRMessagingConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingConstants.m; path = FirebaseMessaging/Sources/FIRMessagingConstants.m; sourceTree = "<group>"; };
 		B0ACD3C01B197B44D9C5D3306B148BCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B0B6501341FD6783C6874C54AB31A9CF /* FirebaseMessaging-FirebaseMessaging_Privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "FirebaseMessaging-FirebaseMessaging_Privacy"; path = FirebaseMessaging_Privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1467,7 +1467,7 @@
 		BA678A8A1C173735EE28A1121E3D89AD /* IsAppEncrypted.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IsAppEncrypted.m; path = third_party/IsAppEncrypted/IsAppEncrypted.m; sourceTree = "<group>"; };
 		BA84029536AA254BE656C600A7FD142A /* Pods-OneSignalNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		BAA2429BE066F42DCB234EE8620519FD /* Pods-HTTSafety-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTTSafety-acknowledgements.plist"; sourceTree = "<group>"; };
-		BB843FCE91630EA049576A5701BB8997 /* Pods-HTTSafety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTTSafety.debug.xcconfig"; sourceTree = "<group>"; };
+		BB843FCE91630EA049576A5701BB8997 /* Pods-WebViewGold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WebViewGold.debug.xcconfig"; sourceTree = "<group>"; };
 		BC157813B5FB9D1AE9D364578B4D0FE0 /* FBNativeAdBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdBase.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdBase.h"; sourceTree = "<group>"; };
 		BC6DF59D1D61E85A6EB327EEA691D9C5 /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
 		BC78A3E51B93202F0CFB6F8235FB4579 /* FIRComponentContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentContainer.h; path = FirebaseCore/Extension/FIRComponentContainer.h; sourceTree = "<group>"; };
@@ -1585,7 +1585,7 @@
 		EC6197396B69F92810DD5C9A145C79BC /* GDTCOREvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREvent.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREvent.h; sourceTree = "<group>"; };
 		ED7BF29DD0C9C4AE3BD7B9B58312B270 /* GoogleDataTransport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleDataTransport.debug.xcconfig; sourceTree = "<group>"; };
 		ED961592169B75AFBED236856448351A /* FirebaseInstallations.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseInstallations.modulemap; sourceTree = "<group>"; };
-		EDB95017DC984A807D5B62DC6A304435 /* Pods-HTTSafety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTTSafety.release.xcconfig"; sourceTree = "<group>"; };
+		EDB95017DC984A807D5B62DC6A304435 /* Pods-WebViewGold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WebViewGold.release.xcconfig"; sourceTree = "<group>"; };
 		EEA0B2E3BC300A427AE2DFD489C2516C /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		EEF341306D11B963BB0CA9CCBBEE0E26 /* FBLPromise+Do.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Do.h"; path = "Sources/FBLPromises/include/FBLPromise+Do.h"; sourceTree = "<group>"; };
 		EEF893590EC9CACA6121122C0F3E8B99 /* HeartbeatsPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatsPayload.swift; path = FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift; sourceTree = "<group>"; };
@@ -2456,7 +2456,7 @@
 		66B537AD5E0835564DFBA907E77E6DC8 /* Pods-HTTSafety */ = {
 			isa = PBXGroup;
 			children = (
-				0ED499D5A43825FF1919D76680FAE2DD /* Pods-HTTSafety.modulemap */,
+				0ED499D5A43825FF1919D76680FAE2DD /* Pods-WebViewGold.modulemap */,
 				5C64B877011CFF71F0E564C3A6BE1EA8 /* Pods-HTTSafety-acknowledgements.markdown */,
 				BAA2429BE066F42DCB234EE8620519FD /* Pods-HTTSafety-acknowledgements.plist */,
 				51EA2E0476382CFCFFC127EF7780A29C /* Pods-HTTSafety-dummy.m */,
@@ -2464,8 +2464,8 @@
 				5D598F0B7ED8BF9202D79671A3C6FF35 /* Pods-HTTSafety-Info.plist */,
 				1C3E31BCCD224F06EE7F3D1866964FCC /* Pods-HTTSafety-resources.sh */,
 				0046B6BF0674BC25D54DE926A9D1CBBC /* Pods-HTTSafety-umbrella.h */,
-				BB843FCE91630EA049576A5701BB8997 /* Pods-HTTSafety.debug.xcconfig */,
-				EDB95017DC984A807D5B62DC6A304435 /* Pods-HTTSafety.release.xcconfig */,
+				BB843FCE91630EA049576A5701BB8997 /* Pods-WebViewGold.debug.xcconfig */,
+				EDB95017DC984A807D5B62DC6A304435 /* Pods-WebViewGold.release.xcconfig */,
 			);
 			name = "Pods-HTTSafety";
 			path = "Target Support Files/Pods-HTTSafety";
@@ -6106,7 +6106,7 @@
 		};
 		8FCCB342CBE7FF0EA9AB86607805AE4A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB95017DC984A807D5B62DC6A304435 /* Pods-HTTSafety.release.xcconfig */;
+			baseConfigurationReference = EDB95017DC984A807D5B62DC6A304435 /* Pods-WebViewGold.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -6129,7 +6129,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HTTSafety/Pods-HTTSafety.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-HTTSafety/Pods-WebViewGold.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -6425,7 +6425,7 @@
 		};
 		AF28DF772C6D07F0013D6FE9CE38793B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB843FCE91630EA049576A5701BB8997 /* Pods-HTTSafety.debug.xcconfig */;
+			baseConfigurationReference = BB843FCE91630EA049576A5701BB8997 /* Pods-WebViewGold.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -6448,7 +6448,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HTTSafety/Pods-HTTSafety.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-HTTSafety/Pods-WebViewGold.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";

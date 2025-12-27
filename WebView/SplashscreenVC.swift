@@ -1,5 +1,5 @@
-//  OnlineAppCreator.com
-//  HTTSafety for iOS // webviewgold.com
+// HTTSafety.com
+//  HTTSafety for iOS // httsafety.com
 
 /* PLEASE CHECK CONFIG.SWIFT FOR CONFIGURATION */
 /* PLEASE CHECK CONFIG.SWIFT FOR CONFIGURATION */

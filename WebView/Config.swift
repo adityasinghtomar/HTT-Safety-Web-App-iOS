@@ -4,7 +4,7 @@
 
 // *** Your Purchase Code of Envato/CodeCanyon ***
 
-// 1. Buy a HTTSafety license (https://www.webviewgold.com/download/iOS) for each app you publish. If your app is going to be
+// 1. Buy a HTTSafety license (https://www.httsafety.com/download/iOS) for each app you publish. If your app is going to be
 // free, a "Regular License" is required. If your app will be sold to your users or if you use the In-App Purchases API, an
 // "Extended License" is required. More info: https://codecanyon.net/licenses/standard?ref=onlineappcreator
 
@@ -212,7 +212,7 @@ static let backgroundlocation = false // Set to true to allow background locatio
     
 static let appendlanguage = false //Set to true if you want to extend URL request by the system language like ?webview_language=LANGUAGE CODE (e.g., ?webview_language=EN for English users)
     
-static let blockfaultyandselfsignedhttpscerts = false //Set to true to block content signed with self-signed SSL (user) certificates & faulty SSL certificates; maybe also consider blocking all Non-HTTPS content, see https://www.webviewgold.com/support-center/knowledgebase/how-to-prevent-non-https-connections-in-webviewgold-for-ios-removing-nsallowsarbitraryloadsinwebcontent-from-info-plist/
+static let blockfaultyandselfsignedhttpscerts = false //Set to true to block content signed with self-signed SSL (user) certificates & faulty SSL certificates; maybe also consider blocking all Non-HTTPS content, see https://www.httsafety.com/support-center/knowledgebase/how-to-prevent-non-https-connections-in-webviewgold-for-ios-removing-nsallowsarbitraryloadsinwebcontent-from-info-plist/
     
 static let jailbreakBlock = false // Change to true to block the app on jailbroken/hacked devices. Note: Detection is not foolproof but employs multiple methods to identify jailbreaks and hacks
     
