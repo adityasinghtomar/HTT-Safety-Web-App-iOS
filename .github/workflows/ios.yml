@@ -10,7 +10,12 @@ jobs:
       run: |
         gem install cocoapods
         pod install
-      
+        
+    - name: Fix script permissions
+      run: |
+        find Pods/Target\ Support\ Files -name "*.sh" -exec chmod +x {} \;
+        chmod +x Pods/**/*.sh
+        
     - name: Archive (no signing)
       run: |
         mkdir -p build
