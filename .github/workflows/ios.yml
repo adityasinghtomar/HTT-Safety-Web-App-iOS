@@ -13,8 +13,7 @@ jobs:
         
     - name: Fix script permissions
       run: |
-        find Pods/Target\ Support\ Files -name "*.sh" -exec chmod +x {} \;
-        chmod +x Pods/**/*.sh
+        find Pods -name "*.sh" -exec chmod +x {} \; || true
         
     - name: Archive (no signing)
       run: |
