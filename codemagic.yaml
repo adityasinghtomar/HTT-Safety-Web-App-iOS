@@ -73,7 +73,7 @@ workflows:
           failure: true
 
       app_store_connect:
-        auth: integration  # Uses ios_creds integration
+        auth: key  # Uses ios_creds integration
         submit_to_testflight: true  # optional: send to TestFlight first
         beta_groups: []             # add your tester groups
         submit_to_app_store: true
