@@ -3,9 +3,14 @@ workflows:
     name: HTT Safety iOS Build
     instance_type: mac_mini_m2
     max_build_duration: 120
-    working_directory: .   # WebViewGold.xcodeproj is at repo root
+    working_directory: .
+
+    integrations:
+      app_store_connect: ios_creds  # Uses your API key group
 
     environment:
+      groups:
+        - ios_creds  # Makes API key vars available during build
       vars:
         XCODE_WORKSPACE: "WebViewGold.xcworkspace"
         XCODE_SCHEME: "WebViewGold"
@@ -33,9 +38,7 @@ workflows:
         script: |
           #!/usr/bin/env bash
           set -e
-
           ARCHIVE_PATH="$PWD/build/WebViewGold.xcarchive"
-
           xcodebuild \
             -workspace "$XCODE_WORKSPACE" \
             -scheme "$XCODE_SCHEME" \
@@ -49,10 +52,8 @@ workflows:
         script: |
           #!/usr/bin/env bash
           set -e
-
           ARCHIVE_PATH="$PWD/build/WebViewGold.xcarchive"
           EXPORT_PATH="$PWD/build/ipa"
-
           xcodebuild \
             -exportArchive \
             -archivePath "$ARCHIVE_PATH" \
@@ -62,7 +63,6 @@ workflows:
     artifacts:
       - build/ipa/*.ipa
       - build/WebViewGold.xcarchive
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Logs/**/*
 
     publishing:
       email:
@@ -71,9 +71,10 @@ workflows:
         notify:
           success: true
           failure: true
+
       app_store_connect:
-        auth: integration
+        auth: integration  # Uses ios_creds integration
         submit_to_testflight: true  # optional: send to TestFlight first
         beta_groups: []             # add your tester groups
-        submit_to_app_store: true   # auto-submit to App Store review
-        release_type: MANUAL        # or SCHEDULED/AFTER_APPROVAL
+        submit_to_app_store: true
+        release_type: AFTER_APPROVAL
