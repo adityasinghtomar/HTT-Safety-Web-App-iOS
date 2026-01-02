@@ -71,3 +71,9 @@ workflows:
         notify:
           success: true
           failure: true
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true  # optional: send to TestFlight first
+        beta_groups: []             # add your tester groups
+        submit_to_app_store: true   # auto-submit to App Store review
+        release_type: MANUAL        # or SCHEDULED/AFTER_APPROVAL
