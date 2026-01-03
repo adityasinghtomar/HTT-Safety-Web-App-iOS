@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8171D2071F6B096F00AA7B99"
-               BuildableName = "WebViewGold.app"
+               BuildableName = "HTTSafety.app"
                BlueprintName = "HTTSafety"
                ReferencedContainer = "container:WebViewGold.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8171D2071F6B096F00AA7B99"
-            BuildableName = "WebViewGold.app"
+            BuildableName = "HTTSafety.app"
             BlueprintName = "HTTSafety"
             ReferencedContainer = "container:WebViewGold.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8171D2071F6B096F00AA7B99"
-            BuildableName = "WebViewGold.app"
+            BuildableName = "HTTSafety.app"
             BlueprintName = "HTTSafety"
             ReferencedContainer = "container:WebViewGold.xcodeproj">
          </BuildableReference>
@@ -71,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8171D2071F6B096F00AA7B99"
-            BuildableName = "WebViewGold.app"
+            BuildableName = "HTTSafety.app"
             BlueprintName = "HTTSafety"
             ReferencedContainer = "container:WebViewGold.xcodeproj">
          </BuildableReference>
