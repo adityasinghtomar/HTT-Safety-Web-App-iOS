@@ -48,7 +48,6 @@ workflows:
             -configuration Release \
             -destination "generic/platform=iOS" \
             -archivePath build/WebViewGold.xcarchive \
-            -allowProvisioningUpdates \
             archive
 
       - name: Export IPA
