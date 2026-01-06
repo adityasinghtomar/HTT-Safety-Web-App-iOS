@@ -11,6 +11,11 @@ workflows:
     environment:
       xcode: 16.0
       cocoapods: default
+      ios_signing:
+        provisioning_profiles:
+          - HTTSafetyAppProvProf
+        certificates:
+          - HTTSafetyAppCertCodeM
 
     triggering:
       events:
@@ -21,14 +26,6 @@ workflows:
           include: true
 
     scripts:
-      - name: Set up keychain
-        script: |
-          keychain initialize
-
-      - name: Set up certificates
-        script: |
-          keychain add-certificates
-
       - name: Set up code signing settings
         script: |
           xcode-project use-profiles
