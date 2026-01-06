@@ -35,7 +35,15 @@ workflows:
         script: |
           #!/usr/bin/env bash
           set -e
-          pod install
+
+          # If Pods folder is committed / has wrong permissions, reset it
+          rm -rf Pods Podfile.lock
+
+          pod install --repo-update
+
+          # Fix "Permission denied" for CocoaPods XCFramework scripts
+          find "Pods/Target Support Files" -name "*-xcframeworks.sh" -exec chmod +x {} \; || true
+          find "Pods/Target Support Files" -name "*-frameworks.sh" -exec chmod +x {} \; || true
 
       - name: Archive app
         script: |
@@ -48,6 +56,7 @@ workflows:
             -configuration Release \
             -destination "generic/platform=iOS" \
             -archivePath build/WebViewGold.xcarchive \
+            ENABLE_USER_SCRIPT_SANDBOXING=NO \
             archive
 
       - name: Export IPA
