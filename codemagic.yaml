@@ -25,15 +25,6 @@ workflows:
         script: |
           keychain initialize
 
-      - name: Fetch signing files
-        script: |
-          app-store-connect fetch-signing-files com.growthclimb.httsafety \
-            --type IOS_APP_STORE \
-            --create
-          app-store-connect fetch-signing-files com.growthclimb.httsafety.OneSignalNotificationServiceExtension \
-            --type IOS_APP_STORE \
-            --create
-
       - name: Set up certificates
         script: |
           keychain add-certificates
