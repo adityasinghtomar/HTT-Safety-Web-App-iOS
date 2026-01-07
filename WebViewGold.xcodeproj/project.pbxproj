@@ -37,7 +37,6 @@
 		3FD195A42B7CAD9100BA5952 /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = 3FD195A32B7CAD9100BA5952 /* custom.css */; };
 		3FD195A62B7CAD9F00BA5952 /* custom.js in Resources */ = {isa = PBXBuildFile; fileRef = 3FD195A52B7CAD9F00BA5952 /* custom.js */; };
 		4574400720B890A000E6336E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574400620B890A000E6336E /* NotificationService.swift */; };
-		4574400B20B890A000E6336E /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4574400420B890A000E6336E /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		493107962612A0EE008DB3D4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493107952612A0EE008DB3D4 /* API.swift */; };
 		4931B4AB25FB859200E2F1A4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4931B4AA25FB859200E2F1A4 /* Config.swift */; };
 		521CB4FD2D9413E90055B53A /* FlashLightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CB4FC2D9413E90055B53A /* FlashLightManager.swift */; };
@@ -65,8 +64,8 @@
 		5667A47101B4609B1036B568 /* Pods_WebViewGold.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF3BE603AB78B24289929B1 /* Pods_WebViewGold.framework */; };
 		6518C570227D555B0018F5CE /* IPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518C56F227D555B0018F5CE /* IPAViewController.swift */; };
 		65514F12227C623900894398 /* IPAHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65514F11227C623900894398 /* IPAHelper.swift */; };
-		75C7F67E2F08DE0600B92672 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B619AE8194CE647B02956741 /* Pods_OneSignalNotificationServiceExtension.framework */; };
-		75C7F67F2F08DE0600B92672 /* Pods_OneSignalNotificationServiceExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B619AE8194CE647B02956741 /* Pods_OneSignalNotificationServiceExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75C239712F0D62AF00AAB4A5 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B619AE8194CE647B02956741 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		75C239722F0D62AF00AAB4A5 /* Pods_OneSignalNotificationServiceExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B619AE8194CE647B02956741 /* Pods_OneSignalNotificationServiceExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F920E0D205C1DDC0036A7ED /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F920E0C205C1DDC0036A7ED /* Network.swift */; };
 		7F920E10205C247A0036A7ED /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F920E0F205C247A0036A7ED /* UIApplication.swift */; };
 		7F920E12205C27600036A7ED /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F920E11205C27600036A7ED /* String.swift */; };
@@ -77,28 +76,7 @@
 		E715B8EF297116F500A91C7B /* images in Resources */ = {isa = PBXBuildFile; fileRef = E715B8EE297116F500A91C7B /* images */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4574400920B890A000E6336E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8171D2001F6B096F00AA7B99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4574400320B890A000E6336E;
-			remoteInfo = OneSignalNotificationServiceExtension;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		4574400F20B890A000E6336E /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				4574400B20B890A000E6336E /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		493107C62612ADE5008DB3D4 /* Embed App Clips */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,13 +87,13 @@
 			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75C7F6802F08DE0600B92672 /* Embed Frameworks */ = {
+		75C239732F0D62AF00AAB4A5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				75C7F67F2F08DE0600B92672 /* Pods_OneSignalNotificationServiceExtension.framework in Embed Frameworks */,
+				75C239722F0D62AF00AAB4A5 /* Pods_OneSignalNotificationServiceExtension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C7F67E2F08DE0600B92672 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+				75C239712F0D62AF00AAB4A5 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +400,7 @@
 				4574400020B890A000E6336E /* Sources */,
 				4574400120B890A000E6336E /* Frameworks */,
 				4574400220B890A000E6336E /* Resources */,
-				75C7F6802F08DE0600B92672 /* Embed Frameworks */,
+				75C239732F0D62AF00AAB4A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -441,7 +419,6 @@
 				8171D2041F6B096F00AA7B99 /* Sources */,
 				8171D2051F6B096F00AA7B99 /* Frameworks */,
 				8171D2061F6B096F00AA7B99 /* Resources */,
-				4574400F20B890A000E6336E /* Embed App Extensions */,
 				493107C62612ADE5008DB3D4 /* Embed App Clips */,
 				0511F00F2B689589F494E9CC /* [CP] Embed Pods Frameworks */,
 				9FE1395AD9385329C2810337 /* [CP] Copy Pods Resources */,
@@ -449,7 +426,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4574400A20B890A000E6336E /* PBXTargetDependency */,
 			);
 			name = HTTSafety;
 			packageProductDependencies = (
@@ -728,14 +704,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4574400A20B890A000E6336E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4574400320B890A000E6336E /* OneSignalNotificationServiceExtension */;
-			targetProxy = 4574400920B890A000E6336E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		8171D20F1F6B096F00AA7B99 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -938,7 +906,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F39CC0CB4782B814FA1970AA /* Pods-WebViewGold.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WebViewGold.entitlements;
@@ -955,6 +922,8 @@
 					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = WebView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "HTT Safety";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -977,7 +946,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D216D34ACB6C227F888EA641 /* Pods-WebViewGold.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WebViewGold.entitlements;
@@ -994,6 +962,8 @@
 					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = WebView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "HTT Safety";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
